@@ -1,65 +1,180 @@
-# Day 04 – Q4: IMDb Roadmap
+# Day 04 – Q4: IMDb Strategic Roadmap
 
 ## Question
 
-Draft a roadmap including vision, strategy, themes, and Key Results (KRs) for IMDb, similar to the Netflix roadmap discussed in the training.
+**Draft a roadmap including vision, strategy, themes, and KRs for IMDb just like we saw it for Netflix.**
 
 ---
 
-## 1. Vision
+# 1. Vision
 
-Make IMDb the most trusted and useful destination for discovering, exploring, and deciding what movies and TV shows to watch.
-
----
-
-## 2. Strategy
-
-Improve content discovery, personalization, and user engagement while maintaining accurate and trustworthy movie and TV information.
+**To become the world's most trusted entertainment discovery platform, helping people easily discover, evaluate, and decide what movies and TV shows to watch.**
 
 ---
 
-## 3. Themes
+# 2. Product Strategy
 
-### Theme 1 – Personalized Discovery
-
-Help users quickly discover movies and shows that match their interests.
-
-### Theme 2 – Content Quality and Trust
-
-Improve the accuracy, completeness, and usefulness of movie and TV information.
-
-### Theme 3 – User Engagement
-
-Encourage users to rate, review, create watchlists, and interact with content.
-
-### Theme 4 – Global Content Discovery
-
-Make international movies and TV shows easier for users to discover and explore.
+- Personalized discovery
+- Trusted and accurate entertainment information
+- Simple and engaging user experience
+- Global content discovery
 
 ---
 
-## 4. Key Results
+# 3. OKRs
 
-| Theme | Key Result |
-|---|---|
-| Personalized Discovery | Increase personalized recommendation engagement by 25% |
-| Personalized Discovery | Increase users discovering a title through recommendations by 20% |
-| Content Quality and Trust | Improve content-data accuracy to 98%+ |
-| Content Quality and Trust | Reduce reported data errors by 30% |
-| User Engagement | Increase ratings and reviews submitted by 20% |
-| User Engagement | Increase watchlist creation and usage by 25% |
-| Global Content Discovery | Increase engagement with international titles by 20% |
-| Global Content Discovery | Increase discovery of non-English content by 25% |
+## Objective
+
+**Make IMDb the most trusted and useful platform for discovering and deciding what to watch.**
+
+### Key Results
+
+- Increase engagement with personalized recommendations by **25%**
+- Improve content-data accuracy to **98%+**
+- Increase ratings and reviews submitted by **20%**
+- Increase engagement with international titles by **20%**
 
 ---
 
-## Roadmap
+# 4. Themes
 
-| Stage | Focus |
-|---|---|
-| Vision | Become the trusted destination for movie and TV discovery |
-| Strategy | Improve discovery, personalization, trust, and engagement |
-| Theme 1 | Personalized Discovery |
-| Theme 2 | Content Quality and Trust |
-| Theme 3 | User Engagement |
-| Theme 4 | Global Content Discovery |
+## Theme 1 – Personalized Discovery
+
+Help users quickly discover movies and TV shows that match their interests.
+
+## Theme 2 – Content Quality & Trust
+
+Make IMDb information accurate, complete, and trustworthy.
+
+## Theme 3 – Ease of Use & Engagement
+
+Make it easy for users to rate, review, create watchlists, and interact with content.
+
+## Theme 4 – Global Discovery
+
+Help users discover movies and TV shows from different countries and languages.
+
+---
+
+# 5. Roadmap
+
+## NOW
+
+### Personalized Discovery
+
+- Improve personalized recommendations
+- Improve recommendation relevance
+- Personalized home experience
+
+### Content Quality & Trust
+
+- Improve movie and TV metadata
+- Improve ratings and review quality
+- Improve content correction workflow
+
+### Ease of Use & Engagement
+
+- Improve watchlist experience
+- Simplify rating and review experience
+
+---
+
+## NEXT
+
+### Personalized Discovery
+
+- Context-aware recommendations
+- Recommendations based on watchlist activity
+
+### Content Quality & Trust
+
+- Automated detection of incorrect metadata
+- Improve review-quality signals
+
+### Ease of Use & Engagement
+
+- Improved user profiles
+- Personalized watchlist recommendations
+
+### Global Discovery
+
+- Improve international content recommendations
+- Highlight regional movies and TV shows
+
+---
+
+## LATER
+
+### Personalized Discovery
+
+- Advanced personalized discovery experience
+- Cross-device personalized recommendations
+
+### Ease of Use & Engagement
+
+- Social discovery features
+- Enhanced community interactions
+
+### Global Discovery
+
+- More localized discovery experiences
+- Expanded international content discovery
+
+---
+
+# 6. Theme → Tactics → KRs
+
+| Theme | Tactics / Initiatives | Key Results / Metrics |
+|---|---|---|
+| Personalized Discovery | Personalized recommendations, improved home experience | +25% recommendation engagement |
+| Content Quality & Trust | Metadata improvements, content correction | 98%+ content-data accuracy |
+| Ease of Use & Engagement | Better ratings, reviews and watchlists | +20% ratings/reviews |
+| Global Discovery | International recommendations, regional content discovery | +20% international-title engagement |
+
+---
+
+# 7. Prioritized Product Backlog
+
+## Now
+
+### Personalized Discovery
+- Recommendation improvements
+- Personalized homepage
+
+### Content Quality & Trust
+- Metadata quality improvements
+- Content correction workflow
+
+### Ease of Use & Engagement
+- Watchlist improvements
+- Rating/review improvements
+
+---
+
+## Next
+
+### Personalized Discovery
+- Context-aware recommendations
+- Watchlist-based recommendations
+
+### Content Quality & Trust
+- Automated metadata validation
+- Review-quality improvements
+
+### Global Discovery
+- International content recommendations
+- Regional content discovery
+
+---
+
+## Later
+
+### Personalized Discovery
+- Advanced personalization
+
+### Ease of Use & Engagement
+- Social discovery
+- Community features
+
+### Global Discovery
+- Localized discovery experience
