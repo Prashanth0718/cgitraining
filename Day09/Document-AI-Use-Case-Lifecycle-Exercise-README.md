@@ -1,39 +1,101 @@
-# Topic 2.1 — Exercise: Map Your Own Use Case Onto the Lifecycle
+# Document AI – Enterprise Data Remediation
 
-## Use Case: Enterprise Document AI for Data Remediation
+## Use Case
 
-### Use Case Summary
+We want to use Document AI to reduce the manual effort involved in
+processing enterprise documents.
 
-**Document AI Capability** — Establish an enterprise document ingestion,
-classification, extraction, summarization, validation, and Human-in-the-Loop
-(HiTL) review capability that supports document-centric business processes.
-
-For this lifecycle exercise, the selected use case is:
-
-> **Enterprise Data Remediation Use Case** — Use Document AI to process
-> enterprise documents, automatically extract required information,
-> validate the extracted data, identify exceptions, and route exceptions
-> to human reviewers for resolution.
-
-The solution can use reusable **Human-in-the-Loop (HiTL)** capabilities such
-as reviewer workflows, work queues, role-based access control, exception
-management, and approval workflows.
+The solution will ingest documents, classify them, extract the
+required information, validate the extracted data, and send
+exceptions to human reviewers through a Human-in-the-Loop (HiTL)
+workflow.
 
 ---
 
-# 9-Stage Lifecycle Map
+## 9-Stage Use-Case Lifecycle
 
-| # | Lifecycle Stage | What Happens for This Use Case | Artifact Produced |
-|---|---|---|---|
-| 1 | **Ideation** | The business identifies manual document-processing and data-remediation work as a problem and proposes Document AI to automate extraction, validation, and exception handling. | **One-page problem statement** |
-| 2 | **Intake** | The team formally documents the document types, data sources, extracted fields, affected users, expected level of automation, and whether sensitive/PII data is involved. | **Completed intake form** |
-| 3 | **Risk Tiering** | The use case is assessed against the organization's risk-tiering framework based on its data, users, autonomy, and potential business impact. | **Documented risk tier + rationale** |
-| 4 | **Design** | The team designs the Document AI architecture, including ingestion, classification, extraction, validation, exception handling, HiTL review, security controls, and system integrations. | **Architecture diagram + ADRs** |
-| 5 | **Build** | Developers implement the approved Document AI workflow, including document ingestion, classification, extraction, validation rules, exception queues, and reviewer workflows. | **Working code + test results** |
-| 6 | **Validate** | An independent validation team tests the solution against requirements, including extraction accuracy, validation behavior, exception handling, access controls, and HiTL workflows. | **Independent validation report** |
-| 7 | **Deploy** | After required approvals, the Document AI solution is released in a controlled manner, potentially starting with a pilot before wider rollout. | **Deployment approval + rollout plan** |
-| 8 | **Monitor** | The team continuously monitors extraction quality, validation failures, exception rates, reviewer activity, system performance, incidents, and potential model/data drift. | **Monitoring dashboard + incident log** |
-| 9 | **Retire** | When the use case is replaced or no longer required, the solution is formally decommissioned and its documents, data, access, and records are handled according to applicable requirements. | **Decommission record + data-handling confirmation** |
+### 1. Ideation
+
+We identify manual document processing and data remediation as a
+business problem where Document AI can help.
+
+**Artifact:** Document AI Use Case Proposal
 
 ---
 
+### 2. Intake
+
+We collect details about the documents, data sources, information
+that needs to be extracted, users involved, and the level of
+automation required.
+
+**Artifact:** Document AI Intake Details
+
+---
+
+### 3. Risk Tiering
+
+We assess the use case using the risk-tiering framework and determine
+whether it falls under Tier 1, Tier 2, or Tier 3.
+
+The final tier will be decided after evaluating the risk factors
+covered in the Risk Tiering Framework.
+
+**Artifact:** Risk Assessment and Tiering Record
+
+---
+
+### 4. Design
+
+We design the Document AI solution, including document ingestion,
+classification, extraction, validation, exception handling, and
+Human-in-the-Loop review.
+
+**Artifact:** Document AI Architecture and Design
+
+---
+
+### 5. Build
+
+We develop the Document AI workflow and implement the required
+extraction, validation, exception handling, and HiTL capabilities.
+
+**Artifact:** Document AI Workflow + Test Results
+
+---
+
+### 6. Validate
+
+An independent team checks the solution to make sure the extraction,
+validation, exception handling, and HiTL workflows work as expected.
+
+**Artifact:** Document AI Validation Report
+
+---
+
+### 7. Deploy
+
+After the required approvals, we release the Document AI solution
+to production in a controlled manner.
+
+**Artifact:** Production Deployment and Rollout Plan
+
+---
+
+### 8. Monitor
+
+We monitor the solution after deployment, including extraction
+accuracy, validation failures, exception rates, reviewer activity,
+and system issues.
+
+**Artifact:** Document AI Monitoring Dashboard + Incident Log
+
+---
+
+### 9. Retire
+
+When the Document AI solution is no longer required or is replaced,
+we formally decommission it and handle the related data and access
+properly.
+
+**Artifact:** Document AI Decommission Record
