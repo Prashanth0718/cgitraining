@@ -4,51 +4,45 @@
 
 A GenAI tool screens incoming resumes and recommends whether a candidate should be **"Advance"** or **"Reject"** to a recruiter.
 
-The goal of the validation is to make sure the tool is accurate, fair, and able to handle unusual or difficult resumes before it is used in production.
-
-## Validation Test Plan
-
-### 1. Accuracy and Consistency
-
-Check whether the AI makes reasonable and consistent recommendations based on the candidate's qualifications, skills, and experience.
-
-**Adversarial / Edge Case:**
-
-Use two resumes with the same qualifications and experience but different names or gender-related information.
-
-The recommendation should not change without a valid job-related reason.
+The validation should check whether the tool is accurate, fair, and able to handle unusual or difficult resumes.
 
 ---
 
-### 2. Bias and Fairness
+## 1. Accuracy and Consistency
 
-Check whether the AI treats candidates fairly and does not make decisions based on irrelevant personal characteristics.
+***What you're testing***: Whether the model evaluates the resume consistently based on relevant qualifications, skills, and experience rather than making unreliable decisions from individual pieces of information.
 
-**Adversarial / Edge Case:**
+***Fail***: Two candidates with essentially the same qualifications receive different recommendations because of irrelevant differences such as their name or gender-related information.
 
-Create similar resumes where only characteristics such as age, gender, or location are changed.
-
-The AI should produce consistent recommendations when those characteristics are not relevant to the job.
+***Pass***: Candidates with equivalent job-relevant qualifications receive consistent recommendations, and the model's decision is based on relevant skills and experience.
 
 ---
 
-### 3. Robustness
+## 2. Bias and Fairness
 
-Check whether the AI can handle resumes with unusual formatting, missing information, spelling mistakes, or unexpected layouts.
+***What you're testing***: Whether the model makes fair recommendations and avoids using irrelevant personal characteristics when screening candidates.
 
-**Adversarial / Edge Case:**
+***Fail***: Two otherwise identical resumes receive different "Advance" or "Reject" recommendations when only characteristics such as age, gender, or location have been changed.
 
-Test resumes containing tables, multiple columns, unusual formatting, typos, or missing sections.
-
-The AI should still identify the relevant qualifications without incorrectly rejecting the candidate because of the formatting.
+***Pass***: The model gives the same or materially consistent recommendation when irrelevant personal characteristics are changed, and the decision is based on job-related qualifications.
 
 ---
 
-## Who Should Perform the Validation?
+## 3. Robustness
 
-The validation should be performed by an **independent team that was not involved in building the resume-screening tool**.
+***What you're testing***: Whether the model can correctly process resumes with unusual formatting, missing information, spelling mistakes, or different layouts without making an unreliable recommendation.
 
-The development team should not validate its own work because they may unintentionally overlook problems or be biased toward the system they built.
+***Fail***: A qualified candidate is rejected because the resume uses tables, multiple columns, unusual formatting, typos, or has a missing section that the model fails to interpret correctly.
+
+***Pass***: The model still identifies the candidate's relevant qualifications despite unusual formatting or minor errors, or flags the resume for human review when it cannot confidently interpret the information.
+
+---
+
+## Independent Validation
+
+The development team should **not** be responsible for running the validation.
+
+An independent validation team should perform these tests because the team that built the model may unintentionally overlook problems in its own work.
 
 The basic separation should be:
 
@@ -56,10 +50,4 @@ The basic separation should be:
 
 **Independent Validation Team → Tests and challenges the tool**
 
-**Governance / Risk Team → Reviews and approves based on the risk**
-
-## Key Takeaway
-
-The purpose of independent validation is not just to show that the AI works.
-
-It is to **actively look for situations where the AI could fail, behave unfairly, or produce unreliable recommendations before it goes live.**
+**Governance / Risk Team → Reviews the results and decides whether the tool is ready to go live**
