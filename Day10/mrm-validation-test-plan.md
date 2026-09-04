@@ -6,7 +6,6 @@ We have a GenAI tool that reviews incoming resumes and recommends whether a cand
 
 Before using it in production, we want to check that it gives reasonable results, treats candidates fairly, and can handle different types of resumes.
 
-
 ---
 
 ## 1. Resume Consistency
